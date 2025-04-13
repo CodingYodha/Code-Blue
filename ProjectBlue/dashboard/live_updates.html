@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Status/Updates</title>
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/live_updates.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">Government Dashboard</div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="issues.html">Issues Report Data</a>
+        <a href="ai_reports.html">AI Predicted Reports</a>
+        <a href="live_updates.html" class="active">Live Status/Updates</a>
+        <a href="support.html">Platform Support</a>
+      </nav>
+      <button class="logout-btn">
+        Team Blueberry
+      </button>
+    </aside>
+    <main class="content">
+      <h1>Live Status/Updates</h1>
+      <div class="updates-container">
+        <div class="update-card">
+          <p><strong>Update:</strong> New oil spill detected near coordinates (35.2, -118.5) at 10:30 AM.</p>
+          <span class="timestamp">2024-03-17 10:30 AM</span>
+        </div>
+        <div class="update-card">
+          <p><strong>Alert:</strong> Illegal fishing activity reported in sector A.</p>
+          <span class="timestamp">2024-03-17 11:15 AM</span>
+        </div>
+        <div id="live-update-area">
+          </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Example of adding live updates (in a real application, you'd fetch these from a backend)
+    function addLiveUpdate(message) {
+      const liveUpdateArea = document.getElementById('live-update-area');
+      const updateCard = document.createElement('div');
+      updateCard.className = 'update-card';
+      updateCard.innerHTML = `<p><strong>Update:</strong> ${message}</p>
+                               <span class="timestamp">${new Date().toLocaleTimeString()}</span>`;
+      liveUpdateArea.appendChild(updateCard);
+    }
+
+    // Example: Simulate a new update every 10 seconds
+    setInterval(() => {
+      addLiveUpdate('Simulated live update.');
+    }, 10000);
+  </script>
+</body>
+</html>
