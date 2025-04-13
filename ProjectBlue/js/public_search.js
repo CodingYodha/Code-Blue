@@ -1,29 +1,18 @@
-/* public_search.js */
-document.getElementById('search-button').addEventListener('click', function() {
-  const area = document.getElementById('search-area').value;
-  // Here, you would typically make an API call to fetch data based on the search area.
-  // For now, let's simulate some results.
-  const resultsDiv = document.getElementById('results');
-  resultsDiv.innerHTML = `<p>Results for: ${area}</p>
-                           <table>
-                             <thead>
-                               <tr>
-                                 <th>Location</th>
-                                 <th>Risk Level</th>
-                                 <th>Details</th>
-                               </tr>
-                             </thead>
-                             <tbody>
-                               <tr>
-                                 <td>Area A</td>
-                                 <td>High</td>
-                                 <td>...</td>
-                               </tr>
-                               <tr>
-                                 <td>Area B</td>
-                                 <td>Medium</td>
-                                 <td>...</td>
-                               </tr>
-                             </tbody>
-                           </table>`;
-});
+function filterTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("searchTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
