@@ -1,0 +1,7 @@
+Results for E:\Projects\Code-Blue\Code-Blue\image.png:
+Inference time: 2.6496 seconds
+Detected 1 ships
+
+Ship #1: Confidence=0.6499, Coordinates=[146, 565, 297, 630]
+
+Output image saved to: output\image_detected.jpg
