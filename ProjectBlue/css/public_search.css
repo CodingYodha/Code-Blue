@@ -1,0 +1,92 @@
+/* public_search.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/ocean2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f8ff; /* Alice Blue */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#search-area {
+    padding: 10px;
+    border: 1px solid #add8e6; /* Light Blue */
+    border-radius: 5px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    color: #ffffff; /* White */
+}
+
+#search-button {
+    background: linear-gradient(45deg, #4682b4, #5f9ea0); /* Steel Blue to Cadet Blue */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-button:hover {
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #00ced1; /* Dark turquoise */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+
+.floating-home {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    background-color: #28a745; /* Green background color */
+    color: #ffffff; /* White color for the icon */
+    width: 60px; /* Width of the floating button */
+    height: 60px; /* Height of the floating button */
+    border-radius: 50%; /* Makes the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    z-index: 99; /* Ensures it appears above other elements */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .floating-home:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+  }
+  
+  .floating-home i {
+    font-size: 40px; /* Icon size */
+    color: #ffffff;
+  }

@@ -1,0 +1,69 @@
+/* dashboard.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/ocean2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f8ff; /* Alice Blue for better readability */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.data-section {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 70, 0.8); /* Slightly lighter dark blue */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #f0f8ff; /* Alice Blue */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.data-section h2 {
+    color: #add8e6; /* Light Blue */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#logout-button {
+    display: block;
+    margin: 30px auto;
+    background: linear-gradient(45deg, #4682b4, #5f9ea0); /* Steel Blue to Cadet Blue */
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logout-button:hover {
+    background: linear-gradient(45deg, #5f9ea0, #4682b4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .data-section {
+        width: 90%;
+    }
+}

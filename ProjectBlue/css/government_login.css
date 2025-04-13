@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('../images/ocean2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f8ff; /* Alice Blue */
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
+  width: 450px; /* Increased width */
+  background-color: #ffffff;
+  padding: 30px 30px; /* Increased padding */
+  opacity: 0.9; /* Slight transparency */
+  transform: translateY(-20px); /* Moves the card slightly up */
+}
+
+.card_title {
+  text-align: center;
+  padding: 10px;
+}
+
+.card_title h1 {
+  font-size: 30px; /* Increased font size */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+}
+
+.card_title span {
+  font-size: 16px; /* Increased font size */
+  color: #555; /* Slightly darker color for better contrast */
+}
+
+.card_title a {
+  color: #4796ff;
+  text-decoration: none;
+}
+
+.card_title a:hover {
+  text-decoration: underline;
+}
+
+.form input {
+  margin: 15px 0; /* Increased margin for better spacing */
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 15px 25px; /* Increased padding */
+  font-size: 16px; /* Increased font size */
+  border-radius: 5px;
+}
+
+.divider {
+  width: 100%; /* Matches the card width */
+  height: 1px;
+  background-color: #ccc; /* Light gray color for the line */
+  margin: 20px 0; /* Adds space above and below the line */
+}
+
+.form button {
+  background-color: #4796ff;
+  color: #ffffff;
+  font-size: 18px; /* Increased font size */
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px; /* Increased padding */
+  width: 100%;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #357ae8;
+}
+
+.card_terms {
+  display: flex;
+  align-items: center;
+  padding: 15px; /* Increased padding */
+}
+
+.card_terms input[type="checkbox"] {
+  margin-right: 10px; /* Increased spacing */
+}
+
+.card_terms span {
+  font-size: 15px; /* Increased font size */
+  color: #555; /* Slightly darker color for better contrast */
+}
+
+.card_back {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.card_back button {
+  background-color: #ff6f61; /* Different background color for the back button */
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card_back button:hover {
+  background-color: #e65b50; /* Slightly darker shade on hover */
+}
+
+.floating-home {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  background-color: #28a745; /* Green background color */
+  color: #ffffff; /* White color for the icon */
+  width: 60px; /* Width of the floating button */
+  height: 60px; /* Height of the floating button */
+  border-radius: 50%; /* Makes the background circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  z-index: 99; /* Ensures it appears above other elements */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.floating-home:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+.floating-home i {
+  font-size: 40px; /* Icon size */
+  color: #ffffff;
+}
