@@ -5,6 +5,7 @@ body {
     padding: 0;
     background: url('../images/ocean.jpg') no-repeat center center fixed; /* Ocean background image */
     background-size: cover; /* Ensure the image covers the entire background */
+    background-attachment: fixed;
     color: #333;
 }
 

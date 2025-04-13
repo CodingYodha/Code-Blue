@@ -4,9 +4,9 @@ document.getElementById('logout-button').addEventListener('click', function() {
   });
   
   // Simulate fetching data for the dashboard
-  document.getElementById('user-data').innerHTML = '<p>User data will be loaded here...</p>';
-  document.getElementById('support-reports').innerHTML = '<p>Support reports will be loaded here...</p>';
+  document.getElementById('user-data').innerHTML = '<p>Local complaint/issue data submitted will be loaded here...</p>';
+  document.getElementById('support-reports').innerHTML = '<p>AI predicted reports will be loaded here...</p>';
   document.getElementById('live-updates').innerHTML = '<p>Live updates will be loaded here...</p>';
-  document.getElementById('oil-spills').innerHTML = '<p>Oil spill locations will be loaded here...</p>';
+  document.getElementById('oil-spills').innerHTML = '<p>You can contact us for platform support through here...</p>';
   
   // In a real application, you would fetch data from your backend API and update these sections dynamically.
