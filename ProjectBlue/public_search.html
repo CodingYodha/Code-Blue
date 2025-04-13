@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Search Portal</title>
+  <link rel="stylesheet" href="css/public_search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="floating-home">
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="card_back">
+        <a href="index.html">
+          <i class="fa fa-home"></i> <span>Home</span>
+        </a>
+      </div>
+
+      <div class="card_title">
+        <h1>Public Search Portal</h1>
+      </div>
+
+      <div class="card_content">
+        <!-- Filter Form -->
+        <div class="filter-container">
+          <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for event types..." title="Type in an event type">
+          <table id="searchTable">
+            <tr class="header">
+              
+              <th style="width:33%;">Event Location</th>
+              <th style="width:33%;">Event Type</th>
+              <th style="width:33%;">Event Photo</th>
+              
+            </tr>
+            <tbody id="searchTableBody">
+              <!-- Data will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/public_search.js"></script>
+</body>
+</html>
