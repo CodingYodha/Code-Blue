@@ -5,16 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Public Search Portal</title>
   <link rel="stylesheet" href="css/public_search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>Public Search Portal</h1>
-  <div class="search-container">
-    <input type="text" id="search-area" placeholder="Enter area to search">
-    <button id="search-button">Search</button>
+
+  <div class="floating-home">
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+    </a>
   </div>
-  <div id="results">
+
+  <div class="container">
+    <div class="card">
+
+      <div class="card_back">
+        <i class="fa fa-home" id="home_icon"><a href="index.html"> Home</a></i>
+      </div>
+
+      <div class="card_title">
+        <h1>Public Search Portal</h1>
+      </div>
+
+      <div class="card_content">
+        <!-- Filter Form -->
+        <div class="filter-container">
+          <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for locations..." title="Type in a location">
+          <table id="searchTable">
+            <tr class="header">
+              <th style="width:25%;">Location</th>
+              <th style="width:25%;">Issue</th>
+              <th style="width:25%;">Coordinates</th>
+              <th style="width:25%;">Updated On</th>
+            </tr>
+            <tr>
+              <td>New York</td>
+              <td>Power Outage</td>
+              <td>40.7128° N, 74.0060° W</td>
+              <td>2025-04-10</td>
+            </tr>
+            <tr>
+              <td>Los Angeles</td>
+              <td>Water Leakage</td>
+              <td>34.0522° N, 118.2437° W</td>
+              <td>2025-04-11</td>
+            </tr>
+            <tr>
+              <td>Chicago</td>
+              <td>Road Block</td>
+              <td>41.8781° N, 87.6298° W</td>
+              <td>2025-04-12</td>
+            </tr>
+            <tr>
+              <td>Houston</td>
+              <td>Gas Leak</td>
+              <td>29.7604° N, 95.3698° W</td>
+              <td>2025-04-09</td>
+            </tr>
+            <tr>
+              <td>San Francisco</td>
+              <td>Bridge Repair</td>
+              <td>37.7749° N, 122.4194° W</td>
+              <td>2025-04-08</td>
+            </tr>
+            <tr>
+              <td>Seattle</td>
+              <td>Flooding</td>
+              <td>47.6062° N, 122.3321° W</td>
+              <td>2025-04-07</td>
+            </tr>
+            <tr>
+              <td>Miami</td>
+              <td>Hurricane Damage</td>
+              <td>25.7617° N, 80.1918° W</td>
+              <td>2025-04-06</td>
+            </tr>
+            <tr>
+              <td>Boston</td>
+              <td>Snowstorm</td>
+              <td>42.3601° N, 71.0589° W</td>
+              <td>2025-04-05</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
     </div>
-  <a href="index.html" class="back-button">Back to Home</a>
+  </div>
   <script src="js/public_search.js"></script>
 </body>
 </html>

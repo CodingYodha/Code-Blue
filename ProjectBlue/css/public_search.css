@@ -1,64 +1,150 @@
-/* public_search.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('../images/ocean2.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #f0f8ff; /* Alice Blue */
+  background: url('../images/ocean.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* Ensure the background is fixed */
+  color: #f0f8ff; /* Alice Blue */
 }
 
-h1 {
-    text-align: center;
-    color: #ffffff; /* White */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-top: 20px;
+.container {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.search-container {
-    text-align: center;
-    margin: 50px 0;
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
+  width: 75%; /* Default width for larger screens */
+  background-color: #ffffff;
+  padding: 20px 20px;
+  opacity: 0.9;
+  transform: translateY(-20px);
+  max-width: 1200px; /* Optional: Set a max width for larger screens */
 }
 
-#search-area {
-    padding: 10px;
-    border: 1px solid #add8e6; /* Light Blue */
-    border-radius: 5px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
-    color: #ffffff; /* White */
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .card {
+    width: 90%; /* Adjust width to 90% for smaller screens */
+  }
 }
 
-#search-button {
-    background: linear-gradient(45deg, #4682b4, #5f9ea0); /* Steel Blue to Cadet Blue */
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+.card_title {
+  text-align: center;
+  padding: 10px;
 }
 
-#search-button:hover {
-    background: linear-gradient(45deg, #00bfff, #1e90ff);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+.card_title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
 }
 
-#results {
-    margin-top: 20px;
+.card_back {
+  text-align: right;
+  margin-top: 10px;
 }
 
-.back-button {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #00ced1; /* Dark turquoise */
-    text-decoration: none;
-    font-size: 14px;
+.card_back a {
+  background-color: #ff6f61;
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.back-button:hover {
-    text-decoration: underline;
+.card_back a:hover {
+  background-color: #e65b50;
+}
+
+.floating-home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-home:hover {
+  background-color: #218838;
+}
+
+.floating-home i {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#searchTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #0078d7; /* Beautiful border color */
+  font-size: 18px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff; /* White background for better visibility */
+}
+
+#searchTable th {
+  text-align: left;
+  padding: 12px;
+  color: #ffffff; /* White text for header */
+  background-color: #0078d7; /* Blue header for a modern look */
+  font-weight: bold;
+}
+
+#searchTable td {
+  text-align: left;
+  padding: 12px;
+  color: #333; /* Dark text for better visibility */
+}
+
+#searchTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#searchTable tr:hover {
+  background-color: #f1f1f1; /* Light gray hover effect */
 }

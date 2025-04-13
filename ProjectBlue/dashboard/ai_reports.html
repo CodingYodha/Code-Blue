@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Predicted Reports</title>
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/ai_reports.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">Government Dashboard</div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="issues.html">Issues Report Data</a>
+        <a href="ai_reports.html" class="active">AI Predicted Reports</a>
+        <a href="live_updates.html">Live Status/Updates</a>
+        <a href="support.html">Platform Support</a>
+      </nav>
+      <button class="logout-btn">
+    Team Blueberry
+  </button>
+    </aside>
+    <main class="content">
+      <h1>AI Predicted Reports</h1>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Prediction ID</th>
+              <th>Predicted Issue</th>
+              <th>Confidence</th>
+              <th>Location</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI-78901</td>
+              <td>Potential Oil Spill</td>
+              <td>95%</td>
+              <td>Lat: 36.2, Lon: -119.5</td>
+              <td>2024-03-17 10:00 AM</td>
+            </tr>
+            <tr>
+              <td>AI-78902</td>
+              <td>Coral Reef Damage</td>
+              <td>88%</td>
+              <td>Lat: 37.8, Lon: -120.1</td>
+              <td>2024-03-17 11:30 AM</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
