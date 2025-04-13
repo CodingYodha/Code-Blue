@@ -1,0 +1,7 @@
+// script.js
+// Logout functionality (applies to all pages)
+document.querySelector('.logout-btn').addEventListener('click', function() {
+  window.location.href = 'index.html'; // Or your login page
+});
+
+// You can add more global JavaScript functionality here

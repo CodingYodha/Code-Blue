@@ -1,0 +1,124 @@
+/* dashboard.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('../images/ocean2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* Ensure the background is fixed */
+  color: #f0f8ff; /* Alice Blue */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.data-section {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 70, 0.8); /* Slightly lighter dark blue */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #f0f8ff; /* Alice Blue */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.data-section h2 {
+    color: #add8e6; /* Light Blue */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#logout-button {
+    background-color: #28a745; /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 15px; /* Adjusted padding for a compact look */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Slightly smaller font size */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+#logout-button i {
+    margin-right: 8px; /* Add spacing between the icon and the text */
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative; /* Ensure the card is the positioning context for the button */
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
+  width: 95%; /* Cover 95% of the page width */
+  height: 95%; /* Cover 95% of the page height */
+  background-color: #ffffff;
+  padding: 20px 20px;
+  opacity: 1; /* Set opacity to 100% */
+  transform: translateY(-20px); /* Moves the card slightly up */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between the title and the button */
+  align-items: center; /* Vertically align items */
+  padding: 10px 20px; /* Add padding for spacing */
+}
+
+.card_title h1 {
+  font-size: 32px; /* Increased font size for better visibility */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove unnecessary margin */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.card_content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+@media (max-width: 768px) {
+    .data-section {
+        width: 90%;
+    }
+}

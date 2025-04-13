@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Report</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/user_report.css">
+</head>
+<body><br>
+  <div class="floating-home">
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+    </a>
+  </div>
+  <div class="container">
+    <div class="card">
+
+      <div class="card_title">
+        <h1>Report an Issue</h1>
+        <div class="card_back">
+          <a href="index.html">
+            <i class="fa fa-home"></i> <span>Home</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="form">
+        <form id="report-form">
+          <label for="zap-id">Zap ID:</label>
+          <input type="text" id="zap-id" name="zap-id" placeholder="Enter your Zap ID" required>
+
+          <label for="event-type">Event Type:</label>
+          <select id="event-type" name="event-type" required>
+            <option value="oil-spill">Oil Spill</option>
+            <option value="robbery">Robbery</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="photos">Photos:</label>
+          <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+
+          <label for="contact">Contact Info:</label>
+          <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="location">Location (Coordinates):</label>
+          <input type="text" id="location" name="location" placeholder="Enter location coordinates" required>
+
+          <div class="divider"></div>
+          <button type="submit">Submit Report</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/user_report.js"></script>
+</body>
+</html>

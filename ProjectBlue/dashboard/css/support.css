@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* support.css */
+.support-info {
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support-info p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #333; /* Darker text for readability */
+}
+
+#support-form {
+  margin-top: 25px;
+}
+
+#support-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #34495e; /* Teal heading color */
+}
+
+#support-form input,
+#support-form textarea {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #555; /* Slightly darker input text */
+  background-color: #f9f9f9; /* Light background for inputs */
+}
+
+#support-form button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#support-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Add some spacing for better layout */
+#support-form label,
+#support-form input,
+#support-form textarea,
+#support-form button {
+  margin-bottom: 15px;
+}

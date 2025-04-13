@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body><br>
+  <div class="container">
+    <div class="card">
+      <div class="card_title">
+        <h1>Government Dashboard</h1>
+        <button id="logout-button">
+          <i class="fa fa-sign-out"></i> Logout
+        </button>
+      </div>
+      <div class="card_content">
+        <div class="dashboard-container">
+          <div class="data-section">
+            <h2>Issues Report Data</h2>
+            <div id="user-data">
+            </div>
+          </div>
+          <div class="data-section">
+            <h2>AI Predicted Reports</h2>
+            <div id="support-reports">
+            </div>
+          </div>
+          <div class="data-section">
+            <h2>Live Status/Updates</h2>
+            <div id="live-updates">
+            </div>
+          </div>
+          <div class="data-section">
+            <h2>Platform Support</h2>
+            <div id="oil-spills">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
