@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ship Detection Map</title>
+  <!-- Include Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Add some custom CSS for the map container -->
+  <style>
+    #map {
+      height: 600px; /* Adjust the height of the map */
+      width: 100%;   /* Take full width of the screen */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ship Detection Map</h1>
+  <!-- The map container -->
+  <div id="map"></div>
+
+  <script>
+    // Initialize the map and set the default view to a region (latitude, longitude, zoom level)
+    var map = L.map('map').setView([1.26, 103.9], 10); // Change these coordinates if necessary
+
+    // Add a tile layer to the map (OpenStreetMap tiles are free to use)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add GeoJSON data to the map (assuming the GeoJSON data is in a file)
+    fetch('ships_detected_2022-1.geojson')  // Replace with your actual file path if necessary
+      .then(response => response.json())
+      .then(data => {
+        // Create a GeoJSON layer and add it to the map
+        L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: 'yellow',
+              color: 'red',
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.7
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            // Popup for each feature, showing info about the detected ship
+            layer.bindPopup('Detected Ship');
+          }
+        }).addTo(map);
+      })
+      .catch(error => {
+        console.error('Error loading GeoJSON data:', error);
+      });
+  </script>
+
+</body>
+</html>

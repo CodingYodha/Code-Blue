@@ -19,7 +19,9 @@
     <div class="card">
 
       <div class="card_back">
-        <i class="fa fa-home" id="home_icon"><a href="index.html"> Home</a></i>
+        <a href="index.html">
+          <i class="fa fa-home"></i> <span>Home</span>
+        </a>
       </div>
 
       <div class="card_title">
@@ -29,62 +31,18 @@
       <div class="card_content">
         <!-- Filter Form -->
         <div class="filter-container">
-          <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for locations..." title="Type in a location">
+          <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for event types..." title="Type in an event type">
           <table id="searchTable">
             <tr class="header">
-              <th style="width:25%;">Location</th>
-              <th style="width:25%;">Issue</th>
-              <th style="width:25%;">Coordinates</th>
-              <th style="width:25%;">Updated On</th>
+              
+              <th style="width:33%;">Event Location</th>
+              <th style="width:33%;">Event Type</th>
+              <th style="width:33%;">Event Photo</th>
+              
             </tr>
-            <tr>
-              <td>New York</td>
-              <td>Power Outage</td>
-              <td>40.7128° N, 74.0060° W</td>
-              <td>2025-04-10</td>
-            </tr>
-            <tr>
-              <td>Los Angeles</td>
-              <td>Water Leakage</td>
-              <td>34.0522° N, 118.2437° W</td>
-              <td>2025-04-11</td>
-            </tr>
-            <tr>
-              <td>Chicago</td>
-              <td>Road Block</td>
-              <td>41.8781° N, 87.6298° W</td>
-              <td>2025-04-12</td>
-            </tr>
-            <tr>
-              <td>Houston</td>
-              <td>Gas Leak</td>
-              <td>29.7604° N, 95.3698° W</td>
-              <td>2025-04-09</td>
-            </tr>
-            <tr>
-              <td>San Francisco</td>
-              <td>Bridge Repair</td>
-              <td>37.7749° N, 122.4194° W</td>
-              <td>2025-04-08</td>
-            </tr>
-            <tr>
-              <td>Seattle</td>
-              <td>Flooding</td>
-              <td>47.6062° N, 122.3321° W</td>
-              <td>2025-04-07</td>
-            </tr>
-            <tr>
-              <td>Miami</td>
-              <td>Hurricane Damage</td>
-              <td>25.7617° N, 80.1918° W</td>
-              <td>2025-04-06</td>
-            </tr>
-            <tr>
-              <td>Boston</td>
-              <td>Snowstorm</td>
-              <td>42.3601° N, 71.0589° W</td>
-              <td>2025-04-05</td>
-            </tr>
+            <tbody id="searchTableBody">
+              <!-- Data will be dynamically inserted here -->
+            </tbody>
           </table>
         </div>
       </div>
