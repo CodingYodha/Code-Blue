@@ -3,50 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Blue - Seeing the Unseen</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Project Sentinal- Advanced Ocean Monitoring System</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-    <section class="hero">
-      <h1>Seeing the Unseen: Protecting Oceans from Afar</h1>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="#" class="navbar-logo">
+          <img src="./logosentinel.png" alt="Sentinal-Logo" />
+          <span class="logo-text">Project SENTINAL</span>
+        </a>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#about">About Us</a>
+          <a href="./dashboard/support.html">Contact</a>
+          <a href="./government_login.html" class="btn btn-accent"
+            >Government Portal</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Protecting Our Oceans With Advanced AI Technology</h1>
+        <p>
+          A comprehensive system for detecting and reporting oil spills,
+          monitoring pollution, and tracking vessel movements in our oceans.
+        </p>
+        <div class="hero-buttons">
+          <a href="/report-spill" class="btn btn-primary">Report Oil Spill</a>
+          <a href="/pollution-map" class="btn btn-secondary"
+            >Pollution Detection</a
+          >
+          <a href="/vessel-tracking" class="btn btn-secondary">Ship Tracking</a>
+        </div>
+      </div>
+
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <h2>Public Search Portal</h2>
-        <i class="fa fa-search search-icon"></i>
-        <!-- Added search icon -->
-        <p>Search for areas at risk and view data.</p>
-        <a href="public_search.html" class="button">Go to Search Portal</a>
-      </div>
-
-      <div class="card">
-        <h2>Report an Issue</h2>
-        <i class="fa fa-exclamation-triangle issue-icon"></i>
-        <!-- Added warning icon -->
-        <p>Report issues like oil spills or robberies at sea.</p>
-        <a href="issue_report.html" class="button">Report an Issue</a>
-      </div>
-
-      <div class="card">
-        <h2>Government Login</h2>
-        <i class="fa fa-lock gov-icon"></i>
-        <!-- Updated to use the lock icon -->
-        <p>Access secure government data and tools.</p>
-        <a href="government_login.html" class="button">Login</a>
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Core Solutions</h2>
+          <p>
+            Leveraging cutting-edge technology to protect our marine ecosystems
+          </p>
+        </div>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div
+              class="feature-img"
+              style="background-image: url('/api/placeholder/400/200')"
+            ></div>
+            <div class="feature-content">
+              <h3>Oil Spill Detection & Reporting</h3>
+              <p style="color: rgb(3, 3, 3)">
+                Our AI-powered system identifies and monitors oil spills in
+                real-time, allowing for immediate reporting and rapid response
+                to minimize environmental damage.
+              </p>
+              <a href="/report-spill" class="btn btn-primary">Report Spill</a>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div
+              class="feature-img"
+              style="background-image: url('/api/placeholder/400/200')"
+            ></div>
+            <div class="feature-content">
+              <h3>Ocean Pollution Mapping</h3>
+              <p style="color: rgb(3, 3, 3)">
+                Advanced AI models identify various types of marine pollution
+                from satellite imagery, creating comprehensive pollution maps to
+                guide cleanup efforts.
+              </p>
+              <a href="/pollution-map" class="btn btn-secondary"
+                >View Pollution Map</a
+              >
+            </div>
+          </div>
+          <div class="feature-card">
+            <div
+              class="feature-img"
+              style="background-image: url('/api/placeholder/400/200')"
+            ></div>
+            <div class="feature-content">
+              <h3>Ship Tracking System</h3>
+              <p style="color: rgb(3, 3, 3)">
+                Monitor vessel movements in real-time with our satellite-based
+                tracking system, identifying potential threats to marine
+                ecosystems and protected areas.
+              </p>
+              <a href="/vessel-tracking" class="btn btn-secondary"
+                >Track Vessels</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <!-- How it Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>
+            Our integrated approach combines satellite data, AI technology, and
+            community reporting
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">1</div>
+            <h3>Data Collection</h3>
+            <p>
+              We gather real-time satellite imagery, sensor data, and user
+              reports to create a comprehensive view of ocean conditions.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon">2</div>
+            <h3>AI Analysis</h3>
+            <p>
+              Our advanced AI models analyze the collected data to identify oil
+              spills, pollution zones, and vessel movements.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <h3>Alert & Action</h3>
+            <p>
+              The system generates alerts for authorities , enabling rapid
+              response to environmental threats.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon">4</div>
+            <h3>Monitoring</h3>
+            <p>
+              Continuous monitoring and historical data analysis help track
+              environmental recovery and improve future responses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Ocean Guardian</h3>
+            <p>
+              Using AI and satellite technology to protect our oceans from
+              pollution and environmental threats.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://link.springer.com/article/10.1007/s10462-023-10455-x"
+                  >Research Papers</a
+                >
+              </li>
+              <li>
+                <a href="https://earthengine.google.com/">Data Sources</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul>
+              <li>vedanshmxxxxx@gmail.com</li>
+              <li>+91-xxxxxxxxxx</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-bottom">
       Designed by
       <a href="https://github.com/CodingYodha/Code-Blue" target="_blank"
         >Team BlueBerry
         <i style="font-size: 24px" class="fa fa-github"></i>
       </a>
     </footer>
+
+    <script>
+      // Menu Toggle
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
