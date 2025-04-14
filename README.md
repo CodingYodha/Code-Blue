@@ -58,11 +58,11 @@ These models analyze images submitted by satellites, officials, and citizens to 
 
 ## 🛠️ Tech Stack
 
-- **AI/ML Models**: Custom-trained models (CV-based)
+- **AI/ML Models**: Custom-trained models (Tensorflow and YOLO)
 - **Backend**: FastAPI (Python)
 - **Frontend**: JavaScript (Interactive Web Interface)
 - **Mapping**: Google Earth Engine + OpenStreetMap
-- **Database**: Secure storage system (unspecified)
+- **Database**: Secure storage system i.e. MySQL
 
 ---
 
