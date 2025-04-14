@@ -7,6 +7,12 @@ body {
   line-height: 1.6;
 }
 
+.content {
+  background: linear-gradient(to bottom, #f7f7f8, #f7f7f8);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 .content h1 {
   color: #34495e;
   margin-bottom: 30px;
