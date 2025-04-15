@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('../images/ocean2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* Ensure the background is fixed */
+  color: #f0f8ff; /* Alice Blue */
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.9);
+  width: 550px; /* Increased width of the form */
+  background-color: #ffffff;
+  padding: 15px 15px; /* Reduced padding */
+  opacity: 0.9; /* Slight transparency */
+  transform: translateY(-20px); /* Moves the card slightly up */
+}
+
+.card_title {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between the title and the button */
+  align-items: center; /* Vertically align items */
+  padding: 5px; /* Reduced padding */
+}
+
+.card_title h1 {
+  font-size: 28px; /* Increased font size */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+  margin: 0; /* Remove default margin */
+}
+
+.card_title span {
+  font-size: 14px; /* Reduced font size */
+  color: #555; /* Slightly darker color for better contrast */
+}
+
+.card_title a {
+  color: #4796ff;
+  text-decoration: none;
+}
+
+.card_title a:hover {
+  text-decoration: underline;
+}
+
+.form input,
+.form select,
+.form textarea {
+  margin: 10px 0; /* Reduced margin */
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 8px 10px; /* Reduced padding */
+  font-size: 14px; /* Reduced font size */
+  border-radius: 5px;
+}
+
+/* Add this rule to style the labels */
+.form label {
+  color: #555; /* Matches the slightly darker color used in the theme */
+  font-size: 16px; /* Increased font size */
+  font-weight: 500; /* Slightly bold for emphasis */
+  margin-bottom: 5px; /* Adds spacing below the label */
+  display: block; /* Ensures labels are on their own line */
+}
+
+/* Style the file input label */
+.form label[for="photos"] {
+  color: #555; /* Matches the slightly darker color used in the theme */
+  font-size: 16px; /* Increased font size */
+  font-weight: 500; /* Slightly bold for emphasis */
+  margin-bottom: 5px; /* Adds spacing below the label */
+  display: block; /* Ensures labels are on their own line */
+}
+
+/* Style the file input field */
+.form input[type="file"] {
+  color: #333; /* Darker text color for better visibility */
+  font-size: 14px; /* Consistent with the theme */
+  background-color: #e2e2e2; /* Matches the input field background */
+  border: none;
+  outline: none;
+  padding: 10px 20px; /* Matches other input fields */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  height: 50px; /* Reduced height */
+}
+
+.divider {
+  width: 100%; /* Matches the card width */
+  height: 1px;
+  background-color: #ccc; /* Light gray color for the line */
+  margin: 15px 0; /* Reduced margin */
+}
+
+.form button {
+  background-color: #4796ff;
+  color: #ffffff;
+  font-size: 16px; /* Reduced font size */
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 10px; /* Reduced padding */
+  width: 100%;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #357ae8;
+}
+
+.card_back {
+  margin: 0; /* Remove margin to align with the title */
+}
+
+.card_back a {
+  background-color: #ff6f61;
+  color: #ffffff; /* Force the text color to white */
+  font-size: 20px; /* Adjust font size for better alignment */
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: inline-flex; /* Use flex to align icon and text */
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card_back a i {
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+.card_back a span {
+  color: #ffffff; /* White color for the text */
+  font-size: 18px;
+  font-weight: 500; /* Slightly bold for emphasis */
+}
+.card_back a:hover {
+  background-color: #e65b50;
+  text-decoration: none;
+}
+
+/* Hide the "Home" text on tablets and smaller screens */
+@media (max-width: 768px) {
+  .card_back a {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .card_back a span {
+    display: none; /* Hide the text */
+  }
+}
+
+.floating-home {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right of the viewport */
+  background-color: #28a745; /* Green background color */
+  color: #ffffff; /* White color for the icon */
+  width: 60px; /* Width of the floating button */
+  height: 60px; /* Height of the floating button */
+  border-radius: 50%; /* Makes the background circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  z-index: 99; /* Ensures it appears above other elements */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.floating-home:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+.floating-home i {
+  font-size: 40px; /* Icon size */
+  color: #ffffff;
+}
+
+/* Form Group Styling */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f9f9f9; /* Light background for inputs */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1565c0; /* Change border color on focus */
+  background-color: #ffffff; /* Highlight background on focus */
+}
+ 
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:focus + label,
+.form-group select:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #1565c0; /* Change label color on focus */
+}
+
+/* Fixing the layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between form fields */
+}
+
+.form button {
+  background-color: #4796ff;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #357ae8;
+}

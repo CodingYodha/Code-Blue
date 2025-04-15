@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Government Dashboard</title>
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="logo">Government Dashboard</div>
+        <nav>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="ai_reports.html">AI Predicted Reports</a>
+          <a href="geo.html">Detected Ships Map</a>
+          <a href="support.html">Platform Support</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <button
+          class="logout-btn top-right"
+          onclick="window.location.href='../index.html'"
+        >
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+        <h1>Government Dashboard</h1>
+        <div class="summary-cards">
+          <a href="ai_reports.html" class="summary-card">
+            <h2>AI Predicted Reports</h2>
+            <p>AI predicted reports will be loaded here...</p>
+          </a>
+
+          <a href="support.html" class="summary-card">
+            <h2>Platform Support</h2>
+            <p>You can contact us for platform support through here...</p>
+          </a>
+
+          <a href="geo.html" class="summary-card">
+            <h2>Detected Ships Map</h2>
+            <p>Live updates will be loaded here...</p>
+          </a>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
